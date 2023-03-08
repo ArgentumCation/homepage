@@ -4,9 +4,9 @@
         "api_error": "API錯誤",
         "status": "狀態",
         "information": "資訊",
-        "url": "URL",
-        "raw_error": "Raw Error",
-        "response_data": "Response Data"
+        "url": "網址",
+        "raw_error": "原始錯誤",
+        "response_data": "回復數據"
     },
     "weather": {
         "current": "目前位置",
@@ -36,9 +36,9 @@
         "no_active": "無播放活動"
     },
     "jellyseerr": {
-        "pending": "待定",
-        "approved": "已接受",
-        "available": "可用的"
+        "pending": "待下載",
+        "approved": "已核准",
+        "available": "可觀看"
     },
     "search": {
         "placeholder": "搜尋…"
@@ -48,7 +48,8 @@
         "free": "剩餘",
         "used": "已使用",
         "load": "負載",
-        "cpu": "CPU"
+        "cpu": "CPU",
+        "mem": "記憶體"
     },
     "nzbget": {
         "rate": "速率",
@@ -61,20 +62,20 @@
         "timeleft": "剩餘時間"
     },
     "rutorrent": {
-        "active": "Active",
-        "upload": "上傳",
-        "download": "下載"
+        "active": "活動中",
+        "upload": "上行速率",
+        "download": "下行速率"
     },
     "radarr": {
         "movies": "電影",
         "wanted": "關注中",
         "queued": "已加入佇列",
-        "missing": "遺失"
+        "missing": "缺少"
     },
     "sonarr": {
         "wanted": "關注中",
         "queued": "已加入佇列",
-        "series": "系列"
+        "series": "影集"
     },
     "readarr": {
         "wanted": "關注中",
@@ -82,24 +83,24 @@
         "books": "書籍"
     },
     "ombi": {
-        "pending": "待定",
-        "approved": "已接受",
-        "available": "可用的"
+        "pending": "待下載",
+        "approved": "已核准",
+        "available": "可觀看"
     },
     "overseerr": {
-        "pending": "待定",
-        "approved": "已接受",
-        "available": "可用的",
+        "pending": "待下載",
+        "approved": "已核准",
+        "available": "可觀看",
         "processing": "處理中"
     },
     "pihole": {
-        "queries": "查詢數",
+        "queries": "查詢",
         "blocked": "已阻擋",
         "gravity": "Gravity"
     },
     "speedtest": {
-        "upload": "上行",
-        "download": "下行",
+        "upload": "上行速率",
+        "download": "下行速率",
         "ping": "Ping"
     },
     "portainer": {
@@ -132,23 +133,23 @@
     "prowlarr": {
         "enableIndexers": "索引器",
         "numberOfGrabs": "抓取",
-        "numberOfQueries": "查詢數",
+        "numberOfQueries": "查詢",
         "numberOfFailGrabs": "抓取失敗",
         "numberOfFailQueries": "查詢失敗"
     },
     "transmission": {
-        "download": "下載",
-        "upload": "上傳",
-        "leech": "Leech",
-        "seed": "Seed"
+        "download": "下行速率",
+        "upload": "上行速率",
+        "leech": "未完成下載",
+        "seed": "已完成下載"
     },
     "jackett": {
         "configured": "已配置",
         "errored": "發生錯誤"
     },
     "bazarr": {
-        "missingEpisodes": "缺失的劇集",
-        "missingMovies": "缺失的電影"
+        "missingEpisodes": "缺少的劇集",
+        "missingMovies": "缺少的電影"
     },
     "lidarr": {
         "wanted": "關注中",
@@ -156,16 +157,16 @@
         "albums": "專輯"
     },
     "adguard": {
-        "queries": "查詢數",
+        "queries": "查詢",
         "blocked": "已阻擋",
         "filtered": "已過濾",
         "latency": "延遲"
     },
     "qbittorrent": {
-        "download": "下載",
-        "upload": "上傳",
-        "leech": "Leech",
-        "seed": "Seed"
+        "download": "下行速率",
+        "upload": "上行速率",
+        "leech": "未完成下載",
+        "seed": "已完成下載"
     },
     "mastodon": {
         "user_count": "使用者",
@@ -196,14 +197,15 @@
         "wan": "WAN",
         "lan_users": "LAN使用者",
         "wlan_users": "WLAN使用者",
-        "up": "UP",
-        "down": "DOWN",
+        "up": "上線",
+        "down": "離線",
         "wait": "請稍後",
         "lan": "LAN",
         "wlan": "WLAN",
         "devices": "設備",
         "lan_devices": "LAN設備",
-        "wlan_devices": "WLAN設備"
+        "wlan_devices": "WLAN設備",
+        "empty_data": "子系統狀態未知"
     },
     "plex": {
         "streams": "正在播放",
@@ -216,8 +218,8 @@
         "wait": "請稍後"
     },
     "changedetectionio": {
-        "totalObserved": "Total Observed",
-        "diffsDetected": "Diffs Detected"
+        "totalObserved": "總監測數",
+        "diffsDetected": "偵測到的變更"
     },
     "wmo": {
         "0-day": "晴",
@@ -279,7 +281,11 @@
     },
     "quicklaunch": {
         "bookmark": "書籤",
-        "service": "服務"
+        "service": "服務",
+        "search": "搜尋",
+        "custom": "自訂",
+        "visit": "Visit",
+        "url": "URL"
     },
     "homebridge": {
         "available_update": "系統",
@@ -290,7 +296,7 @@
         "child_bridges_status": "{{ok}}/{{total}}"
     },
     "autobrr": {
-        "approvedPushes": "接受",
+        "approvedPushes": "已核准",
         "rejectedPushes": "拒絕",
         "filters": "篩選器",
         "indexers": "索引器"
@@ -345,16 +351,16 @@
         "total": "全部"
     },
     "deluge": {
-        "download": "下載",
-        "upload": "上傳",
-        "leech": "Leech",
-        "seed": "Seed"
+        "download": "下行速率",
+        "upload": "上行速率",
+        "leech": "未完成下載",
+        "seed": "已完成下載"
     },
     "flood": {
-        "download": "下載",
-        "upload": "上傳",
-        "leech": "Leech",
-        "seed": "Seed"
+        "download": "下行速率",
+        "upload": "上行速率",
+        "leech": "未完成下載",
+        "seed": "已完成下載"
     },
     "tdarr": {
         "queue": "佇列",
@@ -382,10 +388,10 @@
         "connectedSwitches": "已連接的交換器"
     },
     "downloadstation": {
-        "download": "下載",
-        "upload": "上傳",
-        "leech": "Leech",
-        "seed": "Seed"
+        "download": "下行速率",
+        "upload": "上行速率",
+        "leech": "未完成下載",
+        "seed": "已完成下載"
     },
     "mikrotik": {
         "cpuLoad": "CPU負載",
@@ -400,14 +406,130 @@
     },
     "opnsense": {
         "cpu": "CPU負載",
-        "memory": "Active Memory",
+        "memory": "記憶體",
         "wanUpload": "WAN上傳",
         "wanDownload": "WAN下載"
     },
     "moonraker": {
-        "printer_state": "Printer State",
-        "print_status": "Print Status",
-        "print_progress": "Progress",
-        "layers": "Layers"
+        "printer_state": "列印機狀態",
+        "print_status": "列印狀態",
+        "print_progress": "進度",
+        "layers": "層"
+    },
+    "medusa": {
+        "wanted": "關注中",
+        "queued": "已加入佇列",
+        "series": "影集"
+    },
+    "octoprint": {
+        "printer_state": "狀態",
+        "temp_tool": "噴頭溫度",
+        "temp_bed": "平台溫度",
+        "job_completion": "完成度"
+    },
+    "cloudflared": {
+        "origin_ip": "源頭IP",
+        "status": "狀態"
+    },
+    "proxmoxbackupserver": {
+        "datastore_usage": "數據存儲",
+        "failed_tasks_24h": "24小時內失敗任務",
+        "cpu_usage": "CPU",
+        "memory_usage": "記憶體"
+    },
+    "immich": {
+        "users": "使用者",
+        "photos": "照片",
+        "videos": "影片",
+        "storage": "儲存空間"
+    },
+    "uptimekuma": {
+        "up": "在線網站",
+        "down": "離線網站",
+        "uptime": "在線時間",
+        "incident": "事件",
+        "m": "m"
+    },
+    "komga": {
+        "libraries": "文庫",
+        "series": "叢刊",
+        "books": "書刊"
+    },
+    "mylar": {
+        "series": "系列",
+        "issues": "出版",
+        "wanted": "關注中"
+    },
+    "photoprism": {
+        "albums": "相簿",
+        "photos": "照片",
+        "videos": "影片",
+        "people": "人物"
+    },
+    "diskstation": {
+        "days": "天",
+        "uptime": "運行時間",
+        "volumeAvailable": "剩餘容量"
+    },
+    "fileflows": {
+        "queue": "佇列",
+        "processing": "處理中",
+        "processed": "已處理",
+        "time": "時間"
+    },
+    "grafana": {
+        "dashboards": "控制面板",
+        "datasources": "數據來源",
+        "totalalerts": "警報總數",
+        "alertstriggered": "觸發的警報"
+    },
+    "nextcloud": {
+        "cpuload": "處理器負載",
+        "memoryusage": "記憶體用量",
+        "freespace": "可用空間",
+        "activeusers": "活躍用戶"
+    },
+    "kopia": {
+        "status": "狀態",
+        "size": "檔案大小",
+        "lastrun": "上次運行",
+        "nextrun": "下次運行",
+        "failed": "失敗"
+    },
+    "unmanic": {
+        "active_workers": "Active Workers",
+        "total_workers": "Total Workers",
+        "records_total": "Queue Length"
+    },
+    "healthchecks": {
+        "new": "新建立",
+        "up": "上線",
+        "grace": "延緩中",
+        "down": "離線",
+        "paused": "擱置中",
+        "status": "狀態",
+        "last_ping": "上次檢查",
+        "never": "尚未檢查"
+    },
+    "pterodactyl": {
+        "servers": "Servers",
+        "nodes": "Nodes"
+    },
+    "prometheus": {
+        "targets_up": "Targets Up",
+        "targets_down": "Targets Down",
+        "targets_total": "Total Targets"
+    },
+    "minecraft": {
+        "players": "Players",
+        "version": "Version",
+        "status": "Status",
+        "up": "Online",
+        "down": "Offline"
+    },
+    "ghostfolio": {
+        "gross_percent_today": "Today",
+        "gross_percent_1y": "One year",
+        "gross_percent_max": "All time"
     }
 }

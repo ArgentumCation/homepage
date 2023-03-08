@@ -24,15 +24,15 @@ export default function Component({ service }) {
       <Container service={service}>
         <Block label="proxmox.vms" />
         <Block label="proxmox.lxc" />
-        <Block label="proxmox.cpu" />
-        <Block label="proxmox.ram" />
+        <Block label="resources.cpu" />
+        <Block label="resources.ram" />
       </Container>
     );
   }
 
   const { data } = clusterData ;
-  const vms = data.filter(item => item.type === "qemu") || [];
-  const lxc = data.filter(item => item.type === "lxc") || [];
+  const vms = data.filter(item => item.type === "qemu" && item.template === 0) || [];
+  const lxc = data.filter(item => item.type === "lxc" && item.template === 0) || [];
   const nodes = data.filter(item => item.type === "node") || [];
 
   const runningVMs = vms.reduce(calcRunning, 0);
@@ -46,8 +46,8 @@ export default function Component({ service }) {
     <Container service={service}>
       <Block label="proxmox.vms" value={`${runningVMs} / ${vms.length}`} />
       <Block label="proxmox.lxc" value={`${runningLXC} / ${lxc.length}`} />
-      <Block label="proxmox.cpu" value={t("common.percent", { value: (node.cpu * 100) })} />
-      <Block label="proxmox.mem" value={t("common.percent", { value: ((node.mem / node.maxmem) * 100) })} />
+      <Block label="resources.cpu" value={t("common.percent", { value: (node.cpu * 100) })} />
+      <Block label="resources.mem" value={t("common.percent", { value: ((node.mem / node.maxmem) * 100) })} />
     </Container>
   );
 }

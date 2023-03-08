@@ -22,6 +22,7 @@ import { bookmarksResponse, servicesResponse, widgetsResponse } from "utils/conf
 import ErrorBoundary from "components/errorboundry";
 import themes from "utils/styles/themes";
 import QuickLaunch from "components/quicklaunch";
+import { getStoredProvider, searchProviders } from "components/widgets/search/search";
 
 const ThemeToggle = dynamic(() => import("components/toggles/theme"), {
   ssr: false,
@@ -99,7 +100,7 @@ function Index({ initialSettings, fallback }) {
           localStorage.setItem("hash", hashData.hash);
         }
 
-        if (!initialSettings.isValid || (previousHash && previousHash !== hashData.hash)) {
+        if (previousHash && previousHash !== hashData.hash) {
           setStale(true);
           localStorage.setItem("hash", hashData.hash);
 
@@ -111,7 +112,7 @@ function Index({ initialSettings, fallback }) {
         }
       }
     }
-  }, [hashData, initialSettings]);
+  }, [hashData]);
 
   if (stale) {
     return (
@@ -174,7 +175,7 @@ function Home({ initialSettings }) {
   const { data: services } = useSWR("/api/services");
   const { data: bookmarks } = useSWR("/api/bookmarks");
   const { data: widgets } = useSWR("/api/widgets");
-  
+
   const servicesAndBookmarks = [...services.map(sg => sg.services).flat(), ...bookmarks.map(bg => bg.bookmarks).flat()]
 
   useEffect(() => {
@@ -193,6 +194,20 @@ function Home({ initialSettings }) {
 
   const [searching, setSearching] = useState(false);
   const [searchString, setSearchString] = useState("");
+  let searchProvider = null;
+  const searchWidget = Object.values(widgets).find(w => w.type === "search");
+  if (searchWidget) {
+    if (Array.isArray(searchWidget.options?.provider)) {
+      // if search provider is a list, try to retrieve from localstorage, fall back to the first
+      searchProvider = getStoredProvider() ?? searchProviders[searchWidget.options.provider[0]];
+    } else if (searchWidget.options?.provider === 'custom') {
+      searchProvider = {
+        url: searchWidget.options.url
+      }
+    } else {
+      searchProvider = searchProviders[searchWidget.options?.provider];
+    }
+  }
 
   useEffect(() => {
     function handleKeyDown(e) {
@@ -237,7 +252,7 @@ function Home({ initialSettings }) {
         />
         <meta name="theme-color" content={themes[initialSettings.color || "slate"][initialSettings.theme || "dark"]} />
       </Head>
-      <div className="relative container m-auto flex flex-col justify-between z-10">
+      <div className="relative container m-auto flex flex-col justify-between z-10 h-full">
         <div
           className={classNames(
             "flex flex-row flex-wrap  justify-between",
@@ -250,7 +265,7 @@ function Home({ initialSettings }) {
             setSearchString={setSearchString}
             isOpen={searching}
             close={setSearching}
-            searchDescriptions={settings.quicklaunch?.searchDescriptions}
+            searchProvider={settings.quicklaunch?.hideInternetSearch ? null : searchProvider}
           />
           {widgets && (
             <>
@@ -294,7 +309,7 @@ function Home({ initialSettings }) {
         </div>
 
         <div className="flex p-8 pt-4 w-full justify-end">
-          <Version />
+          {!initialSettings?.hideVersion && <Version />}
         </div>
       </div>
     </>

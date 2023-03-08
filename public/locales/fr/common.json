@@ -16,7 +16,8 @@
         "free": "Libre",
         "used": "Utilisé",
         "load": "Charge",
-        "cpu": "CPU"
+        "cpu": "CPU",
+        "mem": "MÉM"
     },
     "docker": {
         "rx": "Rx",
@@ -109,7 +110,7 @@
     },
     "sabnzbd": {
         "rate": "Débit",
-        "queue": "Queue",
+        "queue": "En attente",
         "timeleft": "Temps restant"
     },
     "nzbget": {
@@ -203,7 +204,8 @@
         "wlan": "WLAN",
         "devices": "Équipt.",
         "lan_devices": "Équipt. LAN",
-        "wlan_devices": "Équipt. WLAN"
+        "wlan_devices": "Équipt. WLAN",
+        "empty_data": "Statut sous-système inconnu"
     },
     "plex": {
         "streams": "Flux actif",
@@ -279,7 +281,11 @@
     },
     "quicklaunch": {
         "bookmark": "Signet",
-        "service": "Service"
+        "service": "Service",
+        "search": "Recherche",
+        "custom": "Personnalisé",
+        "visit": "Aller vers",
+        "url": "URL"
     },
     "homebridge": {
         "available_update": "Système",
@@ -360,7 +366,7 @@
         "queue": "À traiter",
         "processed": "Traité",
         "errored": "En erreur",
-        "saved": "Enregistré"
+        "saved": "Economisé"
     },
     "miniflux": {
         "read": "Lu",
@@ -405,9 +411,125 @@
         "wanDownload": "WAN Récep."
     },
     "moonraker": {
-        "printer_state": "Printer State",
-        "print_status": "Print Status",
-        "print_progress": "Progress",
-        "layers": "Layers"
+        "printer_state": "État Imprimante",
+        "print_status": "Statut Imprimante",
+        "print_progress": "Progression",
+        "layers": "Couches"
+    },
+    "medusa": {
+        "wanted": "Demande",
+        "queued": "En attente",
+        "series": "Séries"
+    },
+    "octoprint": {
+        "printer_state": "Status",
+        "temp_tool": "Tool temp",
+        "temp_bed": "Bed temp",
+        "job_completion": "Achèvement"
+    },
+    "cloudflared": {
+        "origin_ip": "IP Publique",
+        "status": "Statut"
+    },
+    "proxmoxbackupserver": {
+        "datastore_usage": "Datastore",
+        "failed_tasks_24h": "Tâches échouées 24h",
+        "cpu_usage": "CPU",
+        "memory_usage": "Mémoire"
+    },
+    "immich": {
+        "users": "Utilisateurs",
+        "photos": "Photos",
+        "videos": "Vidéos",
+        "storage": "Stockage"
+    },
+    "uptimekuma": {
+        "up": "En ligne",
+        "down": "Hors ligne",
+        "uptime": "Dispo.",
+        "incident": "Incident",
+        "m": "m"
+    },
+    "komga": {
+        "libraries": "Librairies",
+        "series": "Séries",
+        "books": "Livres"
+    },
+    "mylar": {
+        "series": "Séries",
+        "issues": "Issues",
+        "wanted": "Demande"
+    },
+    "photoprism": {
+        "albums": "Albums",
+        "photos": "Photos",
+        "videos": "Vidéos",
+        "people": "Personnes"
+    },
+    "diskstation": {
+        "days": "Jours",
+        "uptime": "Fonctionnement",
+        "volumeAvailable": "Disponible"
+    },
+    "fileflows": {
+        "queue": "À traiter",
+        "processing": "Traitement",
+        "processed": "Traité",
+        "time": "Temps"
+    },
+    "grafana": {
+        "dashboards": "Tableau de bord",
+        "datasources": "Sources données",
+        "totalalerts": "Total alertes",
+        "alertstriggered": "Alertes déclenchées"
+    },
+    "nextcloud": {
+        "freespace": "Espace Libre",
+        "activeusers": "Utilisateurs Actifs",
+        "cpuload": "Charge Cpu",
+        "memoryusage": "Utilisation Mémoire"
+    },
+    "kopia": {
+        "status": "Statut",
+        "size": "Taille",
+        "lastrun": "Dernière exécution",
+        "nextrun": "Prochaine exécution",
+        "failed": "En erreur"
+    },
+    "unmanic": {
+        "active_workers": "En cours",
+        "total_workers": "Total",
+        "records_total": "En attente"
+    },
+    "healthchecks": {
+        "new": "Nouveau",
+        "up": "En ligne",
+        "grace": "En Période de Grâce",
+        "down": "Hors ligne",
+        "paused": "En Pause",
+        "status": "Statut",
+        "last_ping": "Dernier Ping",
+        "never": "Pas de Ping"
+    },
+    "pterodactyl": {
+        "servers": "Serveurs",
+        "nodes": "Nœuds"
+    },
+    "prometheus": {
+        "targets_up": "Targets Up",
+        "targets_down": "Targets Down",
+        "targets_total": "Total Targets"
+    },
+    "minecraft": {
+        "players": "Joueurs",
+        "version": "Version",
+        "status": "Statut",
+        "up": "En ligne",
+        "down": "Hors ligne"
+    },
+    "ghostfolio": {
+        "gross_percent_today": "Aujourd'hui",
+        "gross_percent_1y": "Un an",
+        "gross_percent_max": "Depuis le début"
     }
 }

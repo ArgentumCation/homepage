@@ -4,8 +4,8 @@
         "api_error": "API-Fehler",
         "status": "Status",
         "url": "URL",
-        "information": "Information",
-        "raw_error": "Raw Error",
+        "information": "Informationen",
+        "raw_error": "Unbearbeiteter Fehler",
         "response_data": "Empfangene Daten"
     },
     "search": {
@@ -16,7 +16,8 @@
         "free": "Frei",
         "used": "Gebraucht",
         "load": "Last",
-        "cpu": "CPU"
+        "cpu": "CPU",
+        "mem": "MEM"
     },
     "docker": {
         "rx": "Rx",
@@ -105,7 +106,7 @@
         "pending": "Ausstehend",
         "approved": "Genehmigt",
         "available": "Verfügbar",
-        "processing": "Processing"
+        "processing": "Wird verarbeitet"
     },
     "sabnzbd": {
         "rate": "Geschwindigkeit",
@@ -203,7 +204,8 @@
         "wlan": "WLAN",
         "devices": "Geräte",
         "lan_devices": "LAN-Geräte",
-        "wlan_devices": "WLAN Geräte"
+        "wlan_devices": "WLAN Geräte",
+        "empty_data": "Subsystem status unknown"
     },
     "plex": {
         "streams": "Aktive Streams",
@@ -279,7 +281,11 @@
     },
     "quicklaunch": {
         "bookmark": "Lesezeichen",
-        "service": "Dienst"
+        "service": "Dienst",
+        "search": "Search",
+        "custom": "Custom",
+        "visit": "Visit",
+        "url": "URL"
     },
     "homebridge": {
         "available_update": "System",
@@ -357,7 +363,7 @@
         "seed": "Seed"
     },
     "tdarr": {
-        "queue": "Queue",
+        "queue": "Warteschlange",
         "processed": "Processed",
         "errored": "Errored",
         "saved": "Saved"
@@ -388,8 +394,8 @@
         "seed": "Seed"
     },
     "mikrotik": {
-        "cpuLoad": "CPU Load",
-        "memoryUsed": "Memory Used",
+        "cpuLoad": "CPU Auslastung",
+        "memoryUsed": "RAM Verbrauch",
         "uptime": "Uptime",
         "numberOfLeases": "Leases"
     },
@@ -399,15 +405,131 @@
         "streams_xepg": "XEPG Channels"
     },
     "opnsense": {
-        "cpu": "CPU Load",
+        "cpu": "CPU Auslastung",
         "memory": "Active Memory",
         "wanUpload": "WAN Upload",
         "wanDownload": "WAN Download"
     },
     "moonraker": {
-        "printer_state": "Printer State",
-        "print_status": "Print Status",
-        "print_progress": "Progress",
-        "layers": "Layers"
+        "printer_state": "Drucker Status",
+        "print_status": "Druck Status",
+        "print_progress": "Fortschritt",
+        "layers": "Schichten"
+    },
+    "medusa": {
+        "wanted": "Wanted",
+        "queued": "Queued",
+        "series": "Series"
+    },
+    "octoprint": {
+        "printer_state": "Status",
+        "temp_tool": "Tool temp",
+        "temp_bed": "Bett Temp",
+        "job_completion": "Fortschritt"
+    },
+    "cloudflared": {
+        "origin_ip": "Origin IP",
+        "status": "Status"
+    },
+    "proxmoxbackupserver": {
+        "cpu_usage": "CPU",
+        "datastore_usage": "Datastore",
+        "failed_tasks_24h": "Failed Tasks 24h",
+        "memory_usage": "RAM"
+    },
+    "immich": {
+        "users": "Benutzer",
+        "photos": "Fotos",
+        "videos": "Videos",
+        "storage": "Speicher"
+    },
+    "uptimekuma": {
+        "up": "Sites Up",
+        "down": "Sites Down",
+        "uptime": "Uptime",
+        "incident": "Vorfall",
+        "m": "m"
+    },
+    "komga": {
+        "libraries": "Libraries",
+        "series": "Series",
+        "books": "Bücher"
+    },
+    "mylar": {
+        "series": "Serie",
+        "issues": "Issues",
+        "wanted": "Gesucht"
+    },
+    "photoprism": {
+        "albums": "Alben",
+        "photos": "Fotos",
+        "videos": "Videos",
+        "people": "Personen"
+    },
+    "diskstation": {
+        "days": "Tage",
+        "uptime": "Uptime",
+        "volumeAvailable": "Verfügbar"
+    },
+    "fileflows": {
+        "queue": "Warteschlange",
+        "processing": "Wird verarbeitet",
+        "processed": "Processed",
+        "time": "Zeit"
+    },
+    "grafana": {
+        "dashboards": "Dashboards",
+        "datasources": "Datenquellen",
+        "totalalerts": "Total Alerts",
+        "alertstriggered": "Alerts Triggered"
+    },
+    "nextcloud": {
+        "cpuload": "CPU Last",
+        "memoryusage": "RAM Verbrauch",
+        "freespace": "Freier Speicher",
+        "activeusers": "Aktive Nutzer"
+    },
+    "kopia": {
+        "status": "Status",
+        "size": "Größe",
+        "lastrun": "Last Run",
+        "nextrun": "Next Run",
+        "failed": "Fehlgeschlagen"
+    },
+    "unmanic": {
+        "active_workers": "Active Workers",
+        "total_workers": "Total Workers",
+        "records_total": "Queue Length"
+    },
+    "healthchecks": {
+        "grace": "In Grace Period",
+        "new": "New",
+        "up": "Online",
+        "down": "Offline",
+        "paused": "Paused",
+        "status": "Status",
+        "last_ping": "Last Ping",
+        "never": "No pings yet"
+    },
+    "pterodactyl": {
+        "servers": "Servers",
+        "nodes": "Nodes"
+    },
+    "prometheus": {
+        "targets_up": "Targets Up",
+        "targets_down": "Targets Down",
+        "targets_total": "Total Targets"
+    },
+    "minecraft": {
+        "players": "Players",
+        "version": "Version",
+        "status": "Status",
+        "up": "Online",
+        "down": "Offline"
+    },
+    "ghostfolio": {
+        "gross_percent_max": "All time",
+        "gross_percent_today": "Heute",
+        "gross_percent_1y": "Ein Jahr"
     }
 }

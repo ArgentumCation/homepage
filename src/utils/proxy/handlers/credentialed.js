@@ -1,5 +1,5 @@
 import getServiceWidget from "utils/config/service-helpers";
-import { formatApiCall } from "utils/proxy/api-helpers";
+import { formatApiCall, sanitizeErrorURL } from "utils/proxy/api-helpers";
 import validateWidgetData from "utils/proxy/validate-widget-data";
 import { httpProxy } from "utils/proxy/http";
 import createLogger from "utils/logger";
@@ -28,12 +28,20 @@ export default async function credentialedProxyHandler(req, res, map) {
         headers["X-CMC_PRO_API_KEY"] = `${widget.key}`;
       } else if (widget.type === "gotify") {
         headers["X-gotify-Key"] = `${widget.key}`;
-      } else if (widget.type === "authentik") {
-        headers.Authorization = `Bearer ${widget.key}`;
-      } else if (widget.type === "truenas") {
-        headers.Authorization = `Bearer ${widget.key}`;
+      } else if ([
+        "authentik",
+        "cloudflared",
+        "ghostfolio",
+        "truenas",
+        "pterodactyl",
+        ].includes(widget.type))
+        {
+          headers.Authorization = `Bearer ${widget.key}`;
       } else if (widget.type === "proxmox") {
         headers.Authorization = `PVEAPIToken=${widget.username}=${widget.password}`;
+      } else if (widget.type === "proxmoxbackupserver") {
+        delete headers["Content-Type"];
+        headers.Authorization = `PBSAPIToken=${widget.username}:${widget.password}`;
       } else if (widget.type === "autobrr") {
         headers["X-API-Token"] = `${widget.key}`;
       } else if (widget.type === "tubearchivist") {
@@ -62,7 +70,10 @@ export default async function credentialedProxyHandler(req, res, map) {
       }
 
       if (!validateWidgetData(widget, endpoint, data)) {
-        return res.status(500).json({error: {message: "Invalid data", url, data}});
+        if (data.error && data.error.url) {
+          data.error.url = sanitizeErrorURL(url);
+        }
+        return res.status(500).json({error: {message: "Invalid data", url: sanitizeErrorURL(url), data}});
       }
 
       if (status === 200 && map) {

@@ -127,7 +127,8 @@
         "total": "Всього",
         "free": "Вільно",
         "used": "Використано",
-        "load": "Навантаження"
+        "load": "Навантаження",
+        "mem": "Пам'ять"
     },
     "unifi": {
         "users": "Користувачі",
@@ -143,7 +144,8 @@
         "wlan_users": "WLAN користувачі",
         "up": "Відправка",
         "down": "Завантаження",
-        "wait": "Будь ласка, зачекайте"
+        "wait": "Будь ласка, зачекайте",
+        "empty_data": "Статус підсистеми невідомий"
     },
     "docker": {
         "rx": "RX",
@@ -341,7 +343,11 @@
     },
     "quicklaunch": {
         "bookmark": "Закладка",
-        "service": "Сервіс"
+        "service": "Сервіс",
+        "search": "Пошук",
+        "custom": "Користувацький",
+        "visit": "Відвідайте",
+        "url": "URL"
     },
     "homebridge": {
         "available_update": "Система",
@@ -405,9 +411,125 @@
         "wanDownload": "Завантаження WAN"
     },
     "moonraker": {
-        "printer_state": "Printer State",
-        "print_status": "Print Status",
-        "print_progress": "Progress",
-        "layers": "Layers"
+        "printer_state": "Стан принтера",
+        "print_status": "Статус друку",
+        "print_progress": "Прогрес",
+        "layers": "Шари"
+    },
+    "medusa": {
+        "wanted": "Розшукується",
+        "queued": "У черзі",
+        "series": "Серії"
+    },
+    "octoprint": {
+        "printer_state": "Стан",
+        "temp_tool": "Температура інструменту",
+        "temp_bed": "Температура ліжка",
+        "job_completion": "Завершення"
+    },
+    "cloudflared": {
+        "origin_ip": "Походження IP",
+        "status": "Стан"
+    },
+    "proxmoxbackupserver": {
+        "datastore_usage": "Сховище даних",
+        "failed_tasks_24h": "Невиконані завдання 24 години",
+        "cpu_usage": "CPU",
+        "memory_usage": "Пам'ять"
+    },
+    "immich": {
+        "users": "Користувачі",
+        "photos": "Фотографії",
+        "videos": "Відео",
+        "storage": "Сховище"
+    },
+    "uptimekuma": {
+        "up": "Активні сайти",
+        "down": "Неактивні сайти",
+        "uptime": "Час роботи",
+        "incident": "Інцидент",
+        "m": "хв"
+    },
+    "komga": {
+        "libraries": "Бібліотеки",
+        "series": "Серії",
+        "books": "Книжки"
+    },
+    "mylar": {
+        "series": "Серії",
+        "issues": "Питання",
+        "wanted": "Розшукується"
+    },
+    "photoprism": {
+        "albums": "Альбоми",
+        "photos": "Фото",
+        "videos": "Відео",
+        "people": "Люди"
+    },
+    "diskstation": {
+        "days": "Днів",
+        "uptime": "Час роботи",
+        "volumeAvailable": "Доступно"
+    },
+    "fileflows": {
+        "queue": "Черга",
+        "processing": "Обробка",
+        "processed": "Оброблено",
+        "time": "Час"
+    },
+    "grafana": {
+        "dashboards": "Інформаційні панелі",
+        "datasources": "Джерела даних",
+        "totalalerts": "Всього сповіщень",
+        "alertstriggered": "Спрацювали сповіщення"
+    },
+    "nextcloud": {
+        "cpuload": "Навантаження Cpu",
+        "memoryusage": "Використання пам'яті",
+        "freespace": "Вільного місця",
+        "activeusers": "Активні користувачі"
+    },
+    "kopia": {
+        "status": "Статус",
+        "size": "Розмір",
+        "lastrun": "Останній запуск",
+        "nextrun": "Наступний запуск",
+        "failed": "Помилка"
+    },
+    "unmanic": {
+        "active_workers": "Активні працівники",
+        "total_workers": "Всього робітників",
+        "records_total": "Довжина черги"
+    },
+    "healthchecks": {
+        "new": "Новий",
+        "up": "Онлайн",
+        "down": "Офлайн",
+        "grace": "У пільговий період",
+        "paused": "Призупинено",
+        "status": "Стан",
+        "last_ping": "Останній пінг",
+        "never": "Пінгів ще немає"
+    },
+    "pterodactyl": {
+        "servers": "Сервери",
+        "nodes": "Вузли"
+    },
+    "prometheus": {
+        "targets_up": "Цілі вгору",
+        "targets_down": "Цілі вниз",
+        "targets_total": "Всього цілей"
+    },
+    "minecraft": {
+        "players": "Гравці",
+        "version": "Версія",
+        "status": "Стан",
+        "up": "Онлайн",
+        "down": "Офлайн"
+    },
+    "ghostfolio": {
+        "gross_percent_today": "Сьогодні",
+        "gross_percent_1y": "Один рік",
+        "gross_percent_max": "Весь час"
     }
 }

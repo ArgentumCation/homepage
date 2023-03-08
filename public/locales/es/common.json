@@ -16,7 +16,8 @@
         "free": "Libre",
         "used": "Usado",
         "load": "Carga",
-        "cpu": "CPU"
+        "cpu": "CPU",
+        "mem": "MEM"
     },
     "docker": {
         "rx": "Recibido",
@@ -139,7 +140,7 @@
     "transmission": {
         "download": "Bajada",
         "upload": "Subida",
-        "leech": "Leech",
+        "leech": "Sanguijuela",
         "seed": "Semillas"
     },
     "jackett": {
@@ -164,7 +165,7 @@
     "qbittorrent": {
         "download": "Bajada",
         "upload": "Subida",
-        "leech": "Leech",
+        "leech": "Depender",
         "seed": "Semillas"
     },
     "mastodon": {
@@ -203,7 +204,8 @@
         "wlan": "WLAN",
         "devices": "Dispositivos",
         "lan_devices": "Dispositivos LAN",
-        "wlan_devices": "Dispositivos WLAN"
+        "wlan_devices": "Dispositivos WLAN",
+        "empty_data": "Se desconoce el estado del subsistema"
     },
     "plex": {
         "streams": "Transmisiones activas",
@@ -279,7 +281,11 @@
     },
     "quicklaunch": {
         "bookmark": "Marcadores",
-        "service": "Servicio"
+        "service": "Servicio",
+        "search": "Buscar",
+        "custom": "Personalizado",
+        "visit": "Visita",
+        "url": "URL"
     },
     "homebridge": {
         "available_update": "Sistema",
@@ -347,14 +353,14 @@
     "deluge": {
         "download": "Descarga",
         "upload": "Subida",
-        "leech": "Leech",
+        "leech": "Depender",
         "seed": "Semilla"
     },
     "flood": {
         "download": "Descargar",
         "upload": "Subir",
-        "leech": "Leech",
-        "seed": "Seed"
+        "leech": "Depender",
+        "seed": "Semillas"
     },
     "tdarr": {
         "queue": "Cola",
@@ -405,9 +411,125 @@
         "wanDownload": "Descargar WAN"
     },
     "moonraker": {
-        "printer_state": "Printer State",
-        "print_status": "Print Status",
-        "print_progress": "Progress",
-        "layers": "Layers"
+        "printer_state": "Estado de la impresora",
+        "print_status": "Estado de la impresora",
+        "print_progress": "Progreso",
+        "layers": "Capas"
+    },
+    "medusa": {
+        "wanted": "Querido",
+        "queued": "A la espera",
+        "series": "Serie"
+    },
+    "octoprint": {
+        "temp_bed": "temperatura de la plataforma",
+        "printer_state": "Status",
+        "temp_tool": "Herramienta de temperatura",
+        "job_completion": "Finalización"
+    },
+    "cloudflared": {
+        "origin_ip": "IP de origen",
+        "status": "Estado"
+    },
+    "proxmoxbackupserver": {
+        "cpu_usage": "CPU",
+        "datastore_usage": "Almacén de datos",
+        "failed_tasks_24h": "Tareas fallidas en 24h",
+        "memory_usage": "Memoria"
+    },
+    "immich": {
+        "users": "Usuarios",
+        "photos": "Fotos",
+        "videos": "Vídeos",
+        "storage": "Almacenamiento"
+    },
+    "uptimekuma": {
+        "up": "Páginas web activas",
+        "down": "Páginas web inactivas",
+        "uptime": "Disponibilidad",
+        "incident": "Incidencia",
+        "m": "m"
+    },
+    "komga": {
+        "libraries": "Librerías",
+        "series": "Series",
+        "books": "Libros"
+    },
+    "mylar": {
+        "issues": "Cuestiones",
+        "series": "Series",
+        "wanted": "Buscado"
+    },
+    "photoprism": {
+        "albums": "Álbumes",
+        "photos": "Fotos",
+        "videos": "Vídeos",
+        "people": "Personas"
+    },
+    "diskstation": {
+        "days": "Días",
+        "uptime": "Funcionando",
+        "volumeAvailable": "Disponible"
+    },
+    "fileflows": {
+        "queue": "Cola",
+        "processing": "Procesando",
+        "processed": "Procesado",
+        "time": "Tiempo"
+    },
+    "grafana": {
+        "dashboards": "Dashboards",
+        "datasources": "Fuentes de datos",
+        "totalalerts": "Alertas totales",
+        "alertstriggered": "Alertas activadas"
+    },
+    "nextcloud": {
+        "cpuload": "Carga de la CPU",
+        "memoryusage": "Uso de la memoria",
+        "freespace": "Espacio libre",
+        "activeusers": "Usuarios activos"
+    },
+    "kopia": {
+        "status": "Estado",
+        "size": "Tamaño",
+        "lastrun": "Última ejecución",
+        "nextrun": "Siguiente ejecución",
+        "failed": "Fallido"
+    },
+    "unmanic": {
+        "active_workers": "Trabajadores en activo",
+        "total_workers": "Total de trabajadores",
+        "records_total": "Duración de la cola"
+    },
+    "healthchecks": {
+        "new": "Nuevo",
+        "up": "Conectado",
+        "down": "Desconectado",
+        "grace": "En Periodo de Gracia",
+        "paused": "Pausado",
+        "status": "Estado",
+        "last_ping": "Último Ping",
+        "never": "Aún no hay pings"
+    },
+    "pterodactyl": {
+        "servers": "Servidores",
+        "nodes": "Nodos"
+    },
+    "prometheus": {
+        "targets_up": "Objetivos arriba",
+        "targets_down": "Objetivos abajo",
+        "targets_total": "Objetivos totales"
+    },
+    "minecraft": {
+        "status": "Estado",
+        "up": "En línea",
+        "players": "Jugadores",
+        "version": "Versión",
+        "down": "Sin conexión"
+    },
+    "ghostfolio": {
+        "gross_percent_today": "Hoy",
+        "gross_percent_1y": "Un año",
+        "gross_percent_max": "Todo el tiempo"
     }
 }
