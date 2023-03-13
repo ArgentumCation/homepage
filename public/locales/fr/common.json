@@ -32,7 +32,11 @@
         "playing": "En lecture",
         "transcoding": "Transcodage",
         "bitrate": "Débit",
-        "no_active": "Aucun flux actif"
+        "no_active": "Aucun flux actif",
+        "movies": "Movies",
+        "series": "Series",
+        "episodes": "Episodes",
+        "songs": "Songs"
     },
     "tautulli": {
         "playing": "En lecture",
@@ -47,12 +51,12 @@
     },
     "sonarr": {
         "wanted": "Demande",
-        "queued": "En attente",
+        "queued": "Attente",
         "series": "Séries"
     },
     "radarr": {
         "wanted": "Demande",
-        "queued": "En attente",
+        "queued": "Attente",
         "movies": "Films",
         "missing": "Manquant"
     },
@@ -103,10 +107,10 @@
         "wait": "Veuillez patienter"
     },
     "overseerr": {
-        "pending": "En attente",
+        "pending": "Attente",
         "approved": "Demande",
         "available": "Disponible",
-        "processing": "En traitement"
+        "processing": "Traitement"
     },
     "sabnzbd": {
         "rate": "Débit",

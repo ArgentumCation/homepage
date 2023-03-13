@@ -32,7 +32,11 @@
         "playing": "播放中",
         "transcoding": "转码",
         "bitrate": "比特率",
-        "no_active": "暂无播放"
+        "no_active": "暂无播放",
+        "movies": "Movies",
+        "series": "Series",
+        "episodes": "Episodes",
+        "songs": "Songs"
     },
     "tautulli": {
         "playing": "播放中",
@@ -484,10 +488,10 @@
         "alertstriggered": "Alerts Triggered"
     },
     "nextcloud": {
-        "cpuload": "Cpu Load",
-        "memoryusage": "Memory Usage",
-        "freespace": "Free Space",
-        "activeusers": "Active Users"
+        "cpuload": "处理器负载",
+        "memoryusage": "内存占用",
+        "freespace": "剩余空间",
+        "activeusers": "活跃用户"
     },
     "kopia": {
         "status": "Status",
